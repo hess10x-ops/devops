@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart - Online Shopping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <a href="#" class="logo">
+            <span>Flipkart</span>
+            <small>Explore <b>Plus ✦</b></small>
+        </a>
+
+        <div class="search-box">
+            <span>🔍</span>
+            <input type="text" id="searchInput"
+                   placeholder="Search for products, brands and more">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <button class="login-btn" id="loginBtn">Login</button>
+
+        <button class="nav-link" id="cartToggle">
+            🛒 Cart (<span id="cartCount">0</span>)
+        </button>
+    </header>
+
+    <!-- Product Categories -->
+    <section class="categories">
+        <a href="#products" data-category="All">
+            <span>🛍️</span> All
+        </a>
+        <a href="#products" data-category="Electronics">
+            <span>📱</span> Electronics
+        </a>
+        <a href="#products" data-category="Fashion">
+            <span>👕</span> Fashion
+        </a>
+        <a href="#products" data-category="Home">
+            <span>🛋️</span> Home
+        </a>
+        <a href="#products" data-category="Appliances">
+            <span>🔌</span> Appliances
+        </a>
+        <a href="#products" data-category="Beauty">
+            <span>💄</span> Beauty
+        </a>
+        <a href="#products" data-category="Books">
+            <span>📚</span> Books
+        </a>
+    </section>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="eyebrow">THE BIG SHOPPING DAYS</p>
+            <h1>Big Deals.<br>Better Choices.</h1>
+            <p>Discover amazing products at prices you'll love.</p>
+            <a href="#products" class="shop-btn">Shop Now →</a>
+        </div>
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1607082349566-187342175e2f?auto=format&fit=crop&w=900&q=85"
+                alt="Shopping bags and online shopping">
+        </div>
+    </section>
+
+    <!-- Products -->
+    <main class="products-section" id="products">
+        <div class="section-heading">
+            <div>
+                <h2>Best Deals For You</h2>
+                <p>Top picks selected for your shopping list</p>
+            </div>
+            <button class="clear-filter" id="clearFilter">View All</button>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+
+            <article class="product-card" data-name="smartphone"
+                data-category="Electronics">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=500&q=80"
+                         alt="Smartphone">
+                    <span class="discount">20% OFF</span>
+                </div>
+                <div class="product-info">
+                    <p class="category-label">Electronics</p>
+                    <h3>Premium Smartphone</h3>
+                    <p class="rating">★ 4.5 <span>(1,240)</span></p>
+                    <p class="price">₹19,999 <del>₹24,999</del></p>
+                    <p class="offer">Special price available</p>
+                    <button class="add-btn" data-id="1"
+                        data-name="Premium Smartphone" data-price="19999">
+                        Add to Cart
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="headphones"
+                data-category="Electronics">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=80"
+                         alt="Wireless headphones">
+                    <span class="discount">30% OFF</span>
+                </div>
+                <div class="product-info">
+                    <p class="category-label">Electronics</p>
+                    <h3>Wireless Headphones</h3>
+                    <p class="rating">★ 4.4 <span>(865)</span></p>
+                    <p class="price">₹1,999 <del>₹2,899</del></p>
+                    <p class="offer">Free delivery</p>
+                    <button class="add-btn" data-id="2"
+                        data-name="Wireless Headphones" data-price="1999">
+                        Add to Cart
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="running shoes"
+                data-category="Fashion">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80"
+                         alt="Red running shoes">
+                    <span class="discount">40% OFF</span>
+                </div>
+                <div class="product-info">
+                    <p class="category-label">Fashion</p>
+                    <h3>Sport Running Shoes</h3>
+                    <p class="rating">★ 4.3 <span>(532)</span></p>
+                    <p class="price">₹1,499 <del>₹2,499</del></p>
+                    <p class="offer">Limited-time deal</p>
+                    <button class="add-btn" data-id="3"
+                        data-name="Sport Running Shoes" data-price="1499">
+                        Add to Cart
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="wrist watch"
+                data-category="Fashion">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=500&q=80"
+                         alt="Wrist watch">
+                    <span class="discount">25% OFF</span>
+                </div>
+                <div class="product-info">
+                    <p class="category-label">Fashion</p>
+                    <h3>Classic Wrist Watch</h3>
+                    <p class="rating">★ 4.6 <span>(724)</span></p>
+                    <p class="price">₹2,249 <del>₹2,999</del></p>
+                    <p class="offer">Best seller</p>
+                    <button class="add-btn" data-id="4"
+                        data-name="Classic Wrist Watch" data-price="2249">
+                        Add to Cart
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="backpack bag"
+                data-category="Fashion">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=500&q=80"
+                         alt="Travel backpack">
+                    <span class="discount">35% OFF</span>
+                </div>
+                <div class="product-info">
+                    <p class="category-label">Fashion</p>
+                    <h3>Everyday Backpack</h3>
+                    <p class="rating">★ 4.2 <span>(318)</span></p>
+                    <p class="price">₹1,299 <del>₹1,999</del></p>
+                    <p class="offer">Great value</p>
+                    <button class="add-btn" data-id="5"
+                        data-name="Everyday Backpack" data-price="1299">
+                        Add to Cart
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="camera"
+                data-category="Electronics">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=500&q=80"
+                         alt="Digital camera">
+                    <span class="discount">15% OFF</span>
+                </div>
+                <div class="product-info">
+                    <p class="category-label">Electronics</p>
+                    <h3>Digital Camera</h3>
+                    <p class="rating">★ 4.7 <span>(402)</span></p>
+                    <p class="price">₹25,499 <del>₹29,999</del></p>
+                    <p class="offer">Premium pick</p>
+                    <button class="add-btn" data-id="6"
+                        data-name="Digital Camera" data-price="25499">
+                        Add to Cart
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="coffee maker"
+                data-category="Appliances">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=500&q=80"
+                         alt="Coffee and coffee-making equipment">
+                    <span class="discount">20% OFF</span>
+                </div>
+                <div class="product-info">
+                    <p class="category-label">Appliances</p>
+                    <h3>Home Coffee Maker</h3>
+                    <p class="rating">★ 4.1 <span>(214)</span></p>
+                    <p class="price">₹3,199 <del>₹3,999</del></p>
+                    <p class="offer">Home essentials</p>
+                    <button class="add-btn" data-id="7"
+                        data-name="Home Coffee Maker" data-price="3199">
+                        Add to Cart
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="books"
+                data-category="Books">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=500&q=80"
+                         alt="Books">
+                    <span class="discount">10% OFF</span>
+                </div>
+                <div class="product-info">
+                    <p class="category-label">Books</p>
+                    <h3>Books & Reading Picks</h3>
+                    <p class="rating">★ 4.5 <span>(190)</span></p>
+                    <p class="price">₹449 <del>₹499</del></p>
+                    <p class="offer">Read something new</p>
+                    <button class="add-btn" data-id="8"
+                        data-name="Books & Reading Picks" data-price="449">
+                        Add to Cart
+                    </button>
+                </div>
+            </article>
+
+        </div>
+
+        <p id="noResults" class="no-results" hidden>
+            No products found. Try another search.
+        </p>
+    </main>
+
+    <!-- Shopping Cart Panel -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <aside class="cart-panel" id="cartPanel" aria-label="Shopping cart"
+           aria-hidden="true">
+        <div class="cart-header">
+            <h2>My Shopping Cart</h2>
+            <button id="closeCart" class="close-btn"
+                    aria-label="Close cart">✕</button>
+        </div>
+
+        <div id="cartItems" class="cart-items">
+            <p class="empty-cart">Your cart is empty. Start shopping!</p>
+        </div>
+
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total Amount</span>
+                <strong id="cartTotal">₹0</strong>
+            </div>
+            <button id="checkoutBtn" class="checkout-btn">
+                Proceed to Checkout
+            </button>
+            <p class="demo-note">Demo only — no real payment is processed.</p>
+        </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div>
+            <h3>Flipkart</h3>
+            <p>Your one-stop destination for online shopping.</p>
+        </div>
+        <p>About Us &nbsp; | &nbsp; Contact &nbsp; | &nbsp; Help Center</p>
+        <p class="copyright">© 2026 Shopping Demo. For learning purposes.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
